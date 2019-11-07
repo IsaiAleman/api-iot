@@ -5,9 +5,11 @@ let sequenceNumberByClient = new Map();
 let clients = [];
 
 server.on("connection", socket => {
+  console.log(socket.id);
   socket.on('data', data => {
     if (data.type ==  'request') {
       clients.forEach(client => {
+        console.log('monitor', client);
         client.emit('response', data);
       });
       console.log(data);
@@ -24,3 +26,10 @@ server.on("connection", socket => {
   });
 
 });
+
+
+
+
+
+
+
