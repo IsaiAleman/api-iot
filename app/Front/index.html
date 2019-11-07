@@ -9,106 +9,158 @@
     <title>Front</title>
 </head>
 <body>
-    <br>
-
+  <header class="header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col order-12" align="center">
+          <img src="images.jpg" width="30" height="35" class="d-inline-block align-top" alt="">
+      </div>
+    </div>
+  </header>
     <div class="container">
-      <br>
       <div class="row">
-        <div class="col col-lg-1" align="center">
-          <img src="images.jpg" width="40" height="45" class="d-inline-block align-top" alt="">   
-        </div>
-        <div class="col col-lg-11">
+        <div class="col order-12">
          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
+          <ul class="nav justify-content-center" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#home" style="color:black;">Inicio</a>
+                <a class="nav-link active" data-toggle="tab" href="#home" style="color:#AED6F1  ;">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu1" style="color:black;" onclick="main.cambiaTabla();">Menu 1</a>
+                <a class="nav-link" data-toggle="tab" href="#menu1" style="color:#AED6F1 ;" onclick="main.cambiaTabla();">Menu 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu2" style="color:black;">Menu 2</a>
+                <a class="nav-link" data-toggle="tab" href="#menu2" style="color:#AED6F1 ;">Menu 2</a>
               </li>
           </ul>    
         </div> 
       </div>
       <!-- Tab panes -->
       <div class="tab-content">
-        <div id="home" class="container tab-pane active"><br><br>
-          <div class="jumbotron" style="background-image: url('it3.jpg');">
-            <h1 class="display-4" style="color:white;">Propuesta para control de acceso al laboratorio de Logística mediante el uso de tecnología Arduino y RFID.</h1>
-            <br>
-            <p class="lead" style="color:whitesmoke;" align="right">Internet de las cosas, Universidad del Caribe, Cancún Quintana Roo.</p>
-          </div>
-          <div class="container" align="center">
-              <div class="col col-lg-11" style="text-align:justify;">
-                  <br>
-                  <h4>Introducción</h4>
-                  <br>
-                  <p>Dentro del laboratorio de logística de la Universidad del Caribe, se lleva un “control” de acceso a los estudiantes al área designada; sin embargo dicho control consta de una bitácora donde se debe indicar la matrícula, nombre, fecha y hora en la que accede un estudiante. 
-                    La operación que se lleva a cabo difícilmente cumple con la meta de mantener un control, puesto a que existen estudiantes que no toman consideración de la bitácora por ser algo tediosa ya que al tener clase en el laboratorio constantemente tienen que repetir la operación, además de que al ser muchos estudiantes termina saturando tal bitácora al igual de qué demora a los estudiantes, tanto los que desean acceder como los que desean salir del área.</p>
-              </div>
-              <div class="col col-lg-11" style="text-align:justify;">
-                <br>
-                <h4>Desarrollo</h4>
-                <br>
-                <p>A través de la situación planteada propusimos utilizar un sensor RFID como medio de autentificación para cada miembro universitario, siendo este un método sencillo, 
-                  económico y fácil de usar (para el usuario); además mostrar a través de una aplicación web los siguientes puntos:</p>
-                  <li>Corroborar la fecha y hora en la que acceden los estudiantes.</li>
-                  <li>Visualizar que estudiantes acceden al laboratorio.</li>
-                  <li>Saber las áreas que en las que existe más movimiento de estudiantes.</li>
-                  <li>Identificar si las áreas tienen uso frecuente (aparte del la clase).</li>
-                <br>
-                <div class="row">
-                  <div class="col">
-                    <h4>Materiales</h4>
+          <div id="home" class="container tab-pane active"><br>
+            <div class="jumbotron" style="background-image: url('op2.jpg');">
+              <h1 class="display-4" style="color:white;">Propuesta para control de acceso al laboratorio de Logística mediante el uso de tecnología Arduino y RFID.</h1>
+              <br>
+              <p class="lead" style="color:whitesmoke;" align="right">Internet de las cosas, Universidad del Caribe, Cancún Quintana Roo.</p>
+            </div>
+            <div class="container" align="center">
+                <div class="col col-lg-11" style="text-align:justify;">
                     <br>
-                    <li>Arduino UNO</li>
-                    <li>Módulo Wifi ESP8266</li>
-                    <li>Protoboard</li>
-                    <li>Jumpers</li>
-                    <li>LEDS</li>
-                    <li>RFID-RC522</li>
-                    <li>Tarjetas RFID</li>
-                  </div>
-                  <div class="col">
-                      <h4>Tecnologías que utilizamos</h4>
-                      <br>
-                      <li>IDE Arduino</li>
-                      <li>Node</li>
-                      <li>C++</li>
-                      <li>MySQL</li>
-                  </div>
+                    <h4 class="pb-4 mb-4 border-bottom">Introducción</h4>
+                    <p>Dentro del laboratorio de logística de la Universidad del Caribe, se lleva un “control” de acceso a los estudiantes al área designada; sin embargo dicho control consta de una bitácora donde se debe indicar la matrícula, nombre, fecha y hora en la que accede un estudiante. 
+                      La operación que se lleva a cabo difícilmente cumple con la meta de mantener un control, puesto a que existen estudiantes que no toman consideración de la bitácora por ser algo tediosa ya que al tener clase en el laboratorio constantemente tienen que repetir la operación, además de que al ser muchos estudiantes termina saturando tal bitácora al igual de qué demora a los estudiantes, tanto los que desean acceder como los que desean salir del área.</p>
                 </div>
-                <br>
-                <h4>Procedimiento</h4>
-                <br>
-                <p>Aqui irá el procedimiento de lo que hicimos</p>
-                <pre style="background:#212F3D; color:#D4E6F1;" >Anexar codigo</pre>
-              </div>
+                <div class="col col-lg-11" style="text-align:justify;">
+                  <br>
+                  <h4 class="pb-4 mb-4 border-bottom">Desarrollo</h4>
+                  <p>A través de la situación planteada propusimos utilizar un sensor RFID como medio de autentificación para cada miembro universitario, siendo este un método sencillo, 
+                    económico y fácil de usar (para el usuario); además mostrar a través de una aplicación web los siguientes puntos:</p>
+                    <li>Corroborar la fecha y hora en la que acceden los estudiantes.</li>
+                    <li>Visualizar que estudiantes acceden al laboratorio.</li>
+                    <li>Saber las áreas que en las que existe más movimiento de estudiantes.</li>
+                    <li>Identificar si las áreas tienen uso frecuente (aparte del la clase).</li>
+                  <br>
+                  <div class="row">
+                    <div class="col">
+                      <h4 class="pb-4 mb-4 border-bottom">Materiales</h4>
+                      <li>Arduino UNO</li>
+                      <li>Módulo Wifi ESP8266</li>
+                      <li>Protoboard</li>
+                      <li>Jumpers</li>
+                      <li>LEDS</li>
+                      <li>RFID-RC522</li>
+                      <li>Tarjetas RFID</li>
+                    </div>
+                    <div class="col">
+                        <h4 class="pb-4 mb-4 border-bottom">Tecnologías que utilizamos</h4>
+                        <li>IDE Arduino</li>
+                        <li>Node</li>
+                        <li>C++</li>
+                        <li>MySQL</li>
+                    </div>
+                  </div>
+                  <br>
+                  <h4>Procedimiento</h4>
+                  <br>
+                  
+                  <div class="accordion" id="accordionExample" >
+                      <div class="card" style="border: darkslategrey 1px solid;">
+                        <div class="card-header" id="headingOne" style="background-color: darkslategrey;">
+                          <h2 class="mb-0">
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#HTML" aria-expanded="false" aria-controls="collapseOne" style="color: #AED6F1 ;">
+                              HTML
+                            </button>
+                          </h2>
+                        </div>
+                    
+                        <div id="HTML" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="background:#1C2833;">
+                          <div class="card-body">
+                            <code class="language-markup" data-lang="html">
+                              <pre style="color:rgb(27, 124, 67) ;">
+                              hola mundo
+                              </pre>
+                            </code>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card" style="border: darkslategrey 1px solid">
+                        <div class="card-header" id="headingTwo" style="background-color: darkslategrey;">
+                          <h2 class="mb-0">
+                            <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#JS" aria-expanded="false" aria-controls="collapseTwo" style="color: #AED6F1 ;">
+                              JS
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="JS" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background:#1C2833;">
+                          <div class="card-body">
+                            <pre style="color:rgb(27, 124, 67) ;">
+                              <code>
+                                    p {color}
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card" style="border: darkslategrey 1px solid;">
+                        <div class="card-header" id="headingThree" style="background-color: darkslategrey;">
+                          <h2 class="mb-0">
+                            <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #AED6F1 ;">
+                              Collapsible Group Item #3
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="background:#1C2833;">
+                          <div class="card-body">
+                            <pre style="color:rgb(27, 124, 67) ;">
+                              poppo
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                </div>
+            </div>
           </div>
-        </div>
-        <div id="menu1" class="container tab-pane fade"><br>
-          <h3>Tabla de acceso de estudiantes</h3>
-          <br>
-          <table class="table table-bordered" id="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Fecha y hora</th>
-                  <th scope="col">Matrícula</th>
-                  <th scope="col">Laboratorio</th>
-                </tr>
-              </thead>
-              <tbody id="tabla">
-              </tbody>
-            </table>   
-        </div>
-        <div id="menu2" class="container tab-pane fade"><br>
-          <h3>Menu 2</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        </div>
-      </div>
+          <div id="menu1" class="container tab-pane fade"><br>
+            <h3>Tabla de acceso de estudiantes</h3>
+            <br>
+            <table class="table table-bordered" id="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Fecha y hora</th>
+                    <th scope="col">Matrícula</th>
+                    <th scope="col">Laboratorio</th>
+                  </tr>
+                </thead>
+                <tbody id="tabla">
+                </tbody>
+              </table>   
+          </div>
+          <div id="menu2" class="container tab-pane fade"><br>
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+    </div>
       <footer>
         <p>Elaborado por:</p>
         <p>Aleman Ortíz Jorge Isaí, Constantino Isneros Moisés, Lira Martinez Mariela</p>
